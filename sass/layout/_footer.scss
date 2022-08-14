@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--main-bgc);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  & .social__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white-link-color);
+  }
+  & .social__link:hover,
+  & .social__link:focus {
+    background-color: var(--accent-color);
+  }
+  &-adress-link {
+    color: var(--white-link-color);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-adress-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &-cont-item:last-child {
+    margin-bottom: 0;
+  }
+
+  // &-cont-item:last-child {
+  //   @media screen and (min-width: 768) and (max-width: 1199px) {
+  //     margin-bottom: 0;
+  //   }
+  //   @media screen and (min-width: 768) {
+  //     margin-left: auto;
+  //   }
+  //   @media screen and (min-width: 1200) {
+  //     width: 100%;
+  //   }
+  // }
+  &-cont-item:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 70px;
+    }
+  }
+  &-cont-item:nth-child(2) {
+    margin-right: 0;
+  }
+  &-cont-item {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    margin-bottom: 60px;
+  }
+  &-adress-link:hover,
+  &-adress-link:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.containeer-footer {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+.join-us-tittle {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--white-link-color);
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+  display: block;
+}
+.subscribe {
+  &-icon {
+    fill: var(--white-link-color);
+    margin-left: 10px;
+  }
+  &-form {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-input {
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-right: 12px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+
+    outline: none;
+    transition: border-color var(--animation);
+    &:focus,
+    &:hover {
+      border-color: var(--accent-color);
+    }
+  }
+}

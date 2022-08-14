@@ -1,0 +1,29 @@
+.what-we-do {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  &__list {
+    --card-item: 3;
+  }
+  &__wrap {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    line-height: calc(16 / 14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-link-color);
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background: var(--another-one-bgc);
+  }
+}
