@@ -26,17 +26,6 @@
     margin-bottom: 0;
   }
 
-  // &-cont-item:last-child {
-  //   @media screen and (min-width: 768) and (max-width: 1199px) {
-  //     margin-bottom: 0;
-  //   }
-  //   @media screen and (min-width: 768) {
-  //     margin-left: auto;
-  //   }
-  //   @media screen and (min-width: 1200) {
-  //     width: 100%;
-  //   }
-  // }
   &-cont-item:not(:last-child) {
     @media screen and (min-width: 768px) {
       margin-right: 70px;

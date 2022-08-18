@@ -33,6 +33,7 @@
             <button type="button" class="header__menu-btn" data-Menu-open>
                 <svg class="header__menu-icon" width="24" height="16">
                     <use href="img/icons.svg#icon-header-menu"></use>
+                    
                 </svg>
             </button>
             <ul class="auth-nav list">
@@ -185,19 +186,33 @@
                 <ul class="list our-team__list card-set">
                     <li class="our-team__item card-set-item">
                         <picture>
+          
+                          <!-- jpg -->
                             <source
                                 srcset="./img/teamcard/teamcard1-1x.jpg 1x, 
                                 ./img/teamcard/teamcard1-2x.jpg 2x"
-                                media="(min-width: 1200px)">
+                                media="(min-width: 1200px)" type="image/jpeg">
                             <source
                                 srcset="./img/teamcard/teamcard1-tab-1x.jpg 1x, 
                                 ./img/teamcard/teamcard1-tab-2x.jpg 2x"
-                                media="(min-width: 768px)">
+                                media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="./img/teamcard/teamcard1-mob-1x.jpg 1x, 
                                 ./img/teamcard/teamcard1-mob-2x.jpg 2x" 
-                                media="(min-width: 480px)">
+                                media="(max-width: 767px)" type="image/jpeg">
+                                                  <!-- webp -->
+                                <source
+                                srcset="./img/teamcard/teamcard1-1x.webp 1x, 
+                                ./img/teamcard/teamcard1-2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source
+                                srcset="./img/teamcard/teamcard1-tab-1x.webp 1x, 
+                                ./img/teamcard/teamcard1-tab-2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/teamcard/teamcard1-mob-1x.webp 1x, 
+                                ./img/teamcard/teamcard1-mob-2x.webp 2x" 
+                                media="(max-width: 767px)" type="image/webp">
                                 
-                            <img class="our-team__img" src="./img/teamcard/teamcard1.jpg" alt="Product Designer Игорь Демьяненко">
+                            <img class="our-team__img" src="./img/teamcard/teamcard1.jpg" height="260" width="270" alt="Product Designer Игорь Демьяненко">
                         </picture>
                        
                         <h3 class="our-team__tittle">Игорь Демьяненко</h3>
@@ -242,7 +257,7 @@
                             <source srcset="./img/teamcard/teamcard2-mob-1x.jpg 1x, 
                                 ./img/teamcard/teamcard2-mob-2x.jpg 2x" media="(min-width: 480px)">
                         
-                            <img class="our-team__img" src="./img/teamcard/teamcard2.jpg" alt="Product Designer Игорь Демьяненко">
+                            <img class="our-team__img" src="./img/teamcard/teamcard2.jpg" height="260" width="270" alt="Product Designer Игорь Демьяненко">
                         </picture>
                         <h3 class="our-team__tittle">Ольга Репина</h3>
                         <p class="our-team__text">Frontend Developer</p>
@@ -289,7 +304,7 @@
 ./img/teamcard/teamcard3-mob-2x.jpg 2x"
                                 media="(min-width: 480px)">
                         
-                            <img class="our-team__img" src="./img/teamcard/teamcard3.jpg" alt="Product Designer Игорь Демьяненко">
+                            <img class="our-team__img" src="./img/teamcard/teamcard3.jpg" height="260" width="270" alt="Product Designer Игорь Демьяненко">
                         </picture>
                         
                         <h3 class="our-team__tittle">Николай Тарасов</h3>
@@ -337,7 +352,7 @@
                                 ./img/teamcard/teamcard4-mob-2x.jpg 2x"
                                 media="(min-width: 480px)">
                         
-                            <img class="our-team__img" src="./img/teamcard/teamcard4.jpg" alt="Product Designer Игорь Демьяненко">
+                            <img class="our-team__img" src="./img/teamcard/teamcard4.jpg" height="260" width="270" alt="Product Designer Игорь Демьяненко">
                         </picture>
                        
                         <h3 class="our-team__tittle">Михаил Ермаков</h3>
