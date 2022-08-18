@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  transform: translateX(0);
   width: 100%;
   height: 100%;
   padding: 48px 40px;
@@ -15,7 +16,7 @@
   letter-spacing: 0.02em;
   background-color: #ffffff;
   z-index: 1;
-  transition: top var(--animation), opacity var(--animation),
+  transition: transform var(--animation), opacity var(--animation),
     visibility var(--animation);
   &__close-btn {
     display: block;
@@ -24,6 +25,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
 
     &:hover .menu__close-icon,
     &:focus .menu__close-icon {
@@ -37,7 +39,7 @@
     margin-left: -10px;
   }
   &.is-hidden {
-    top: 100%;
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
   }
@@ -56,8 +58,7 @@
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__item:hover &__link,
-  &__item:focus &__link {
+  &__link:hover, &__link:focus {
     color: var(--accent-color);
   }
 }

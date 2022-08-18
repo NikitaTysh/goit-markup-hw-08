@@ -11,16 +11,20 @@
   @media screen and (max-width: 767px) {
     padding: 15px 23px 15px 15px;
   }
-
+  &__menu-icon{
+    cursor: pointer;
+  }
   &__menu-btn {
     border: none;
+    cursor: pointer;
     background-color: transparent;
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
-  &__menu-btn:hover &__menu_icon,
-  &__menu-btn:focus &__menu_icon {
-    fill: var(--accent-color);
-  }
+ &__menu-btn:hover &__menu-icon,
+ &__menu-btn:focus &__menu-icon
+ {
+  fill: var(--accent-color);
+ }
 }
